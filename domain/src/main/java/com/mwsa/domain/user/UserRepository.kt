@@ -5,5 +5,5 @@ import com.mwsa.domain.user.models.User
 interface UserRepository {
 
     suspend fun getUsers(): List<User>
-    suspend fun postUser()
+    suspend fun postUser(user: User)
 }
