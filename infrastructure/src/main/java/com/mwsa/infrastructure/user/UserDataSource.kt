@@ -12,6 +12,6 @@ interface UserRemoteDataSource {
 
     suspend fun updateUser(user: UserApiDto)
 
-    suspend fun deleteUser(user: UserApiDto)
+
 
 }
