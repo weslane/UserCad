@@ -45,6 +45,11 @@ abstract class BaseApi() : KoinComponent {
         crossinline block: HttpRequestBuilder.() -> Unit = {},
     ): Either<Exception, T> = safeApiCall { get(endpoint, block) }
 
+    suspend inline fun <reified T> safePost(
+        endpoint: String,
+        crossinline block: HttpRequestBuilder.() -> Unit = {},
+    ): Either<Exception, T> = safeApiCall { get(endpoint, block) }
+
 
     fun joinURL(endpoint: String) = "${checkUrl()}$endpoint"
 
@@ -58,6 +63,6 @@ abstract class BaseApi() : KoinComponent {
     companion object{
 
         private const val API_URL =
-            "https://test.avaty.com.br/Desafio/rest/desafioRest"
+            "https://test.avaty.com.br"
     }
 }
