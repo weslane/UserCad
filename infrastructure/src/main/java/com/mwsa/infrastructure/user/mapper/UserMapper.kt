@@ -49,3 +49,16 @@ fun UserApiDto.toEntity(): UserEntity =
         cpfCnpj = this.cpfCnpj,
         dataNascimento = this.dataNascimento
     )
+
+fun UserEntity.toApiDto(): UserApiDto =
+    UserApiDto(
+        nome = this.nome,
+        username = this.username,
+        password = this.password,
+        foto = this.foto,
+        email = this.email,
+        endereco = this.endereco,
+        sexo = this.sexo,
+        cpfCnpj = this.cpfCnpj,
+        dataNascimento = this.dataNascimento
+    )
