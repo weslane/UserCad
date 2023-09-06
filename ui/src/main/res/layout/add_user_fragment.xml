@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_nome"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:hint="@string/nome"
+            app:layout_constraintTop_toTopOf="parent"
+            android:labelFor="@id/te_nome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/te_nome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="2"
+                android:contentDescription=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_usarname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            app:layout_constraintTop_toBottomOf="@+id/tf_nome"
+            android:labelFor="@id/te_username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/te_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="1"
+                android:contentDescription=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:layout_constraintTop_toBottomOf="@+id/tv_usarname"
+            android:labelFor="@id/te_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/te_password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="1"
+                android:contentDescription=""
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_endereco"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/endereco"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password"
+            android:labelFor="@id/te_endereco">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/te_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="1"
+                android:contentDescription=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            app:layout_constraintTop_toBottomOf="@+id/tv_endereco"
+            android:labelFor="@id/te_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/te_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="1"
+                android:contentDescription=""
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_dt_nasc"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/data_de_nascimento"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            android:labelFor="@id/te_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/te_dt_nasc"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="1"
+                android:contentDescription=""
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
