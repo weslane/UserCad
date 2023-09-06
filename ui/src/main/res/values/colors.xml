@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="color_background_image">#E3E2E2</color>
+    <color name="color_light_gray">#C1BFBF</color>
+    <color name="color_card_background">#D6D1D1</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="teal_50">#E0F2F1</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="gray_700">#616161</color>
+</resources>

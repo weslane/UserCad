@@ -1,0 +1,5 @@
+include ':domain'
+include ':infrastructure'
+include ':ui'
+include ':di'
+include ':app'
